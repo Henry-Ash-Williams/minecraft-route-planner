@@ -129,8 +129,7 @@ def write_waypoints(args, route):
         case _:
             dimension = "dim%0"
 
-    # path = pathlib.Path(args.waypoint_dir, dimension, "mw$default_1.txt")
-    path = pathlib.Path(args.waypoint_dir, dimension, "tmp.txt")
+    path = pathlib.Path(args.waypoint_dir, dimension, "mw$default_1.txt")
     structure_name = args.structure.title().replace("_", " ")
     route_name = args.route_name if args.route_name else structure_name
 
