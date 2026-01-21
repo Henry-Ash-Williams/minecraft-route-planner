@@ -1,15 +1,15 @@
-# Minecraft route finder 
+# Minecraft route planner 
 
 ![Route between all ancient cities in a minecraft world](demo.png)
 
 ```
-usage: route-planner [-h] [-i INPUT] -s STRUCTURE [-d DETAILS]
-                     [-o ORIGIN ORIGIN] [-l LIMIT] [--show-total-distance]
-                     [--use-regex-in-details] [-w]
-                     [--waypoint-dir WAYPOINT_DIR]
-                     [--waypoint-colour {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}]
-                     [--route-name ROUTE_NAME] [--waypoint-type {0,1,2,3}]
-                     [--waypoint-visibility {0,1,2,3}]
+usage: python main.py [-h] [-i INPUT] -s STRUCTURE [-d DETAILS]
+                      [-o ORIGIN ORIGIN] [-l LIMIT] [--show-total-distance]
+                      [--use-regex-in-details] [-w]
+                      [--waypoint-dir WAYPOINT_DIR]
+                      [--waypoint-colour {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}]
+                      [--route-name ROUTE_NAME] [--waypoint-type {0,1,2,3}]
+                      [--waypoint-visibility {0,1,2,3}]
 
 Finds a route between structures in a minecraft world using the Christofides
 algorithm
@@ -17,7 +17,7 @@ algorithm
 options:
   -h, --help            show this help message and exit
   -i INPUT, --input INPUT
-                        path to the structures.csv file exported by cubiomes
+                        path to the structures.txt file exported by cubiomes
                         viewer
   -s STRUCTURE, --structure STRUCTURE
                         The kind of structure we're interested in
@@ -55,7 +55,7 @@ Written by lainon for the University of Sussex Minesoc survival server
 
 ## Installation 
 
-1. `git clone https://github.com/Henry-Ash-Williams/route-finder` 
+1. `git clone https://github.com/Henry-Ash-Williams/minecraft-route-planner` 
 2. `cd route-finder`
 3. `uv sync` 
 4. If you want to use this for a different world or server, use [cubiomes-viewer](https://github.com/Cubitect/cubiomes-viewer) to export a list of structures for the world. 
