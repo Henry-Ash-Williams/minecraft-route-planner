@@ -20,7 +20,7 @@ def get_args():
     parser.add_argument(
         "-i",
         "--input",
-        default="/Users/henrywilliams/Documents/programming/python/ai/end-raid-route/structures.txt",
+        required=True,
         help="path to the structures.csv file exported by cubiomes viewer",
     )
 
@@ -80,7 +80,6 @@ def get_args():
 
     waypoint_opts.add_argument(
         "--waypoint-dir",
-        default="/Users/henrywilliams/Library/Application Support/PrismLauncher/instances/lainpack-1.21.11/.minecraft/xaero/minimap/Multiplayer_minesocsussex.com",
         help="root directory of xaeros minimap waypoints for the world or server",
         type=str,
     )
